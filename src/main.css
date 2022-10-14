@@ -1,0 +1,262 @@
+/* Chosen theme colors: */
+/* color: #ffc400; */
+/* color: #607d8b; */
+/* color: #34515e; */
+/* color: white; */
+/* color: #da3131; */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+/* All */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Header section */
+header {
+  background-color: rgb(0, 0, 0);
+}
+
+.header-container {
+  height: 18.75rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80);
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-position: relative;
+
+  border-bottom: #34515e 4px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container > p {
+  letter-spacing: 0.3rem;
+  font-size: 0.5rem;
+  color: #ffc400;
+}
+
+.header-logo img {
+  width: 14.75rem;
+  height: 1.875rem;
+  padding-bottom: 1rem;
+}
+
+/* Navigation section */
+.nav-container {
+  border-bottom: 1px solid white;
+  margin: 0 1.25rem;
+  box-shadow: rgba(136, 107, 4, 0.1) 0px 10px 10px -10px;
+}
+
+.nav-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-nav-link {
+  color: rgb(0, 0, 0);
+  padding: 1.25rem 1rem;
+  font-size: 0.9rem;
+}
+
+.a-nav-link:hover {
+  color: #ffc400;
+  transition: 0.8s;
+}
+
+/* Main Section */
+
+/* Promotion section */
+#promotion-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale-visual img {
+  padding-top: 2rem;
+  width: 16.75rem;
+  height: 18.75rem;
+}
+
+.sale-info {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info-heading {
+  padding: 1rem 0;
+  color: #da3131;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sale-info > p {
+  color: #607d8b;
+  padding: 1rem 0;
+}
+
+#sale-btn {
+  padding: 1rem 0;
+}
+
+.sale-btn {
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding: 0.5rem;
+  color: white;
+  background-color: #da3131;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Footer section */
+.footer-container {
+  width: 100%;
+  height: 100px;
+  background-color: #34515e;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+}
+
+.footer-left img {
+  width: 6.25rem;
+  height: 3.125rem;
+}
+
+.footer-right {
+  flex-direction: column;
+}
+
+.footer-right > p {
+  padding: 0.65rem;
+}
+
+.footer-right a {
+  color: #ffc400;
+}
+
+/* Media queries */
+@media only screen and (min-width: 600px) {
+  /* Header section */
+  .header-logo img {
+    width: 37.5rem;
+    height: 4.375rem;
+  }
+
+  .header-container > p {
+    font-size: 0.8rem;
+    letter-spacing: 0.5rem;
+  }
+
+  /* Navigation section */
+  .nav-container {
+    margin: 0 3.75rem;
+  }
+
+  .a-nav-link {
+    color: rgb(0, 0, 0);
+    padding: 1.25rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  /* Promotion Section */
+  main {
+    display: grid;
+  }
+
+  #promotion-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .sale-visual {
+    padding-left: 5rem;
+  }
+
+  .sale-info {
+    padding-right: 5rem;
+  }
+
+  .sale-info p {
+    width: 80%;
+  }
+
+  /* Footer section */
+  .footer-left,
+  .footer-right {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Header section */
+  .header-logo img {
+    width: 43.75rem;
+    height: 5rem;
+  }
+
+  /* Navigation section */
+  .nav-container {
+    margin: 0 6.25rem;
+  }
+
+  .a-nav-link {
+    color: rgb(0, 0, 0);
+    padding: 1.25rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  /* Promotion section */
+  .sale-visual {
+    padding-left: 12.5rem;
+  }
+
+  .sale-info {
+    padding-right: 12.5rem;
+  }
+
+  /* Footer section */
+  .footer-left,
+  .footer-right {
+    font-size: 0.8rem;
+  }
+}

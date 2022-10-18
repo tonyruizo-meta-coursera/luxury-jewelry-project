@@ -11,7 +11,7 @@
 
 ### Demo
 
-<img src="img/etc/demo.gif"/>
+![](/src/img/etc/demo.gif)
 
 ### Tools used:
 
